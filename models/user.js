@@ -27,7 +27,7 @@ class User extends BaseModel {
 
             email: {
                 type: DataTypes.STRING,
-                allowNull: false,
+                allowNull: true,
                 validate: {isEmail: {msg: "Email Id is invalid."}},
                 field: 'email'
             },
